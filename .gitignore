@@ -1,8 +1,14 @@
-# Dependency directories
 node_modules/
-dist
-tmp
+dist/
+dist/lss-tmp/audio/
+dist/lss-tmp/uploads/
+tmp/
+tmp/audio/
+tmp/uploads/
 .temp
 .cache
 .vscode-test
 package-lock.json
+.history/*
+.history/src/*
+.DS_Store

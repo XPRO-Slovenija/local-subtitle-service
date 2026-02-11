@@ -131,35 +131,7 @@ strip dist/lss-linux-arm64 || true
 
 Pick the binary you need from `dist/` and ship it with a `.env` file.
 
-### Building a Linux arm64 SEA binary (most compatible on aarch64)
-
-On an arm64 host (Ubuntu):
-
-```bash
-sudo apt-get update && sudo apt-get install -y ffmpeg curl build-essential
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt-get install -y nodejs
-cd /path/to/localSubtitleService
-npm ci
-npm install -D postject
-
-cat > sea-config.json <<'EOF'
-{
-  "main": "./src/server.js",
-  "output": "./dist/sea-prep.blob",
-  "useSnapshot": true
-}
-EOF
-
-mkdir -p dist
-node --experimental-sea-config sea-config.json
-cp "$(command -v node)" dist/lss-linux-arm64
-npx postject dist/lss-linux-arm64 NODE_SEA_BLOB dist/sea-prep.blob --sentinel-fuse NODE_SEA_BLOB
-chmod +x dist/lss-linux-arm64
-strip dist/lss-linux-arm64 || true
-```
-
-Then run `dist/lss-linux-arm64` with your `.env` present.
+### Linux arm64 SEA binary doesn't work! Run project via node.
 
 ## Troubleshooting
 
