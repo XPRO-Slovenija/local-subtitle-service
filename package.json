@@ -1,0 +1,29 @@
+{
+  "name": "localsubtitleservice",
+  "version": "1.0.0",
+  "description": "Local video-to-subtitle service using ffmpeg + Speech7 API",
+  "main": "src/server.js",
+  "bin": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "bash scripts/build-binaries.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "form-data": "^4.0.5",
+    "multer": "^2.0.2",
+    "pino": "^8.17.2",
+    "pino-pretty": "^10.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "pkg": "^5.8.1"
+  }
+}

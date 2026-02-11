@@ -1,0 +1,9 @@
+{
+  "scripts": {},
+  "pkg": {
+    "assets": [".env.example"],
+    "targets": ["node20-macos-x64", "node20-linux-x64", "node20-win-x64"],
+    "outputPath": "dist",
+    "outputName": "localSubtitleService"
+  }
+}

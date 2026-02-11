@@ -1,0 +1,16 @@
+{
+  "main": "src/server.js",
+  "output": "dist/lss-linux-arm64",
+  "target": {
+    "platform": "linux",
+    "arch": "arm64",
+    "nodeRange": "node18"
+  },
+  "assets": [
+    "src/**/*",
+    "node_modules/**/*",
+    "package.json",
+    "package-lock.json"
+  ],
+  "resources": []
+}
